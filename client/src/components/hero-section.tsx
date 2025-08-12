@@ -29,32 +29,48 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left animate-fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Deploy de sua aplicação 
-              <span className="text-secondary block mt-2">com segurança</span>
+              🚀 Tecnologia que gera 
+              <span className="text-secondary block mt-2">resultados reais</span>
+              <span className="text-primary block mt-2">para o seu negócio</span>
             </h1>
             
-            <p className="text-lg md:text-xl text-primary mb-4 font-medium">
-              A melhor solução para sua empresa
+            <p className="text-base md:text-lg text-gray-600 mb-8 max-w-2xl">
+              Ajudamos empresas a crescer, reduzir custos e proteger seus dados com soluções inteligentes de automação, segurança e nuvem. Tudo de forma personalizada, ágil e segura.
             </p>
             
-            <p className="text-base md:text-lg text-gray-600 mb-8 max-w-2xl">
-              Impulsionamos sua transformação digital com soluções personalizadas em DevOps, Cloud Security e consultoria especializada. Simplificamos processos, protegemos seus dados e otimizamos sua jornada na nuvem.
-            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 text-sm">
+              <div className="flex items-center text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Aumente sua produtividade eliminando processos manuais
+              </div>
+              <div className="flex items-center text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Reduza custos de infraestrutura com automação
+              </div>
+              <div className="flex items-center text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Proteja seu negócio contra ataques cibernéticos
+              </div>
+              <div className="flex items-center text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Ganhe escalabilidade para crescer sem limites
+              </div>
+            </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button
-                onClick={scrollToServices}
+                onClick={() => window.open("https://api.whatsapp.com/send?phone=5562996573471", "_blank")}
                 className="bg-primary text-white hover:bg-secondary px-8 py-6 text-lg font-semibold hover-lift"
               >
-                Nossos Serviços
+                📅 Agende uma reunião gratuita
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button
+                onClick={scrollToServices}
                 variant="outline"
                 className="border-primary text-primary hover:bg-primary hover:text-white px-8 py-6 text-lg font-semibold"
-                onClick={() => window.open("https://api.whatsapp.com/send?phone=5562996573471", "_blank")}
               >
-                Fale Conosco
+                Ver Resultados
               </Button>
             </div>
           </div>
@@ -72,13 +88,13 @@ export default function HeroSection() {
             
             {/* Floating stats cards */}
             <div className="absolute -bottom-8 -left-8 bg-primary text-white rounded-xl p-4 shadow-xl animate-fade-in">
-              <div className="text-2xl font-bold">99.9%</div>
-              <div className="text-sm font-medium">Uptime</div>
+              <div className="text-2xl font-bold">-40%</div>
+              <div className="text-sm font-medium">Custos em Nuvem</div>
             </div>
             
             <div className="absolute -top-8 -right-8 bg-secondary text-white rounded-xl p-4 shadow-xl animate-fade-in">
-              <div className="text-2xl font-bold">24/7</div>
-              <div className="text-sm font-medium">Suporte</div>
+              <div className="text-2xl font-bold">3x</div>
+              <div className="text-sm font-medium">Mais Rápido</div>
             </div>
           </div>
         </div>

@@ -6,31 +6,31 @@ export default function ServicesSection() {
   const services = [
     {
       id: "01",
-      title: "DevOps",
-      description: "Automação de Infraestrutura e Integração Contínua",
+      title: "Automação Inteligente e Entregas Ágeis",
+      description: "Coloque seus produtos no mercado até 3x mais rápido, com processos automatizados e sem erros.",
       image: "https://images.unsplash.com/photo-1667372393086-9d4001d51cf1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
-      alt: "Automação DevOps com pipelines CI/CD"
+      alt: "Automação de processos e entregas ágeis"
     },
     {
       id: "02", 
-      title: "Cloud Security",
-      description: "Segurança Avançada para Ambientes em Nuvem",
+      title: "Segurança Digital Avançada",
+      description: "Proteção completa contra ameaças e conformidade com padrões globais como LGPD e ISO 27001.",
       image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
-      alt: "Segurança em nuvem com proteção digital avançada"
+      alt: "Segurança digital e proteção de dados"
     },
     {
       id: "03",
-      title: "Kubernetes", 
-      description: "Gerenciamento de Containers em Escala",
+      title: "Escalabilidade Sob Demanda", 
+      description: "Tenha aplicações sempre disponíveis e prontas para crescer junto com sua demanda.",
       image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
-      alt: "Orquestração de containers com Kubernetes"
+      alt: "Escalabilidade automática e alta disponibilidade"
     },
     {
       id: "04",
-      title: "Consultoria AWS",
-      description: "Focamos em segurança, otimização de custos e escalabilidade.",
+      title: "Consultoria Estratégica em Nuvem",
+      description: "Reduza custos, aumente a performance e tenha mais segurança na sua infraestrutura AWS.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
-      alt: "Consultoria AWS e planejamento de infraestrutura"
+      alt: "Consultoria estratégica em nuvem AWS"
     }
   ];
 
@@ -44,7 +44,7 @@ export default function ServicesSection() {
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">NOSSOS SERVIÇOS</h2>
           <p className="text-xl text-medium max-w-3xl mx-auto">
-            Soluções avançadas para alavancar seus negócios
+            Soluções que geram resultados reais para o seu negócio
           </p>
         </div>
         

@@ -7,22 +7,28 @@ export default function ProjectsSection() {
 
   const projects = [
     {
-      title: "Zero-Downtime",
-      subtitle: "Deployment",
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      alt: "Equipe de DevOps trabalhando em deployment sem downtime"
-    },
-    {
-      title: "FinOps",
-      subtitle: "Consulting Project",
+      title: "Redução de até 40%",
+      subtitle: "nos custos em nuvem",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      alt: "Análise financeira e otimização de custos em cloud"
+      alt: "Redução significativa de custos em infraestrutura de nuvem"
     },
     {
-      title: "Development / IaC",
-      subtitle: "Infrastructure Architecture",
+      title: "Deploys realizados",
+      subtitle: "em horas, não em semanas",
+      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+      alt: "Automação de deploys para entregas ultra-rápidas"
+    },
+    {
+      title: "Ambientes 100% conformes",
+      subtitle: "com LGPD e ISO 27001",
+      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+      alt: "Conformidade total com padrões de segurança"
+    },
+    {
+      title: "Escalabilidade automática",
+      subtitle: "para atender picos de demanda",
       image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      alt: "Desenvolvimento de infraestrutura como código"
+      alt: "Escalabilidade automática e inteligente"
     }
   ];
 
@@ -37,13 +43,13 @@ export default function ProjectsSection() {
     <section id="projetos" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">PROJETOS PERSONALIZADOS</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">RESULTADOS QUE JÁ ENTREGAMOS</h2>
           <p className="text-xl text-medium">
-            Nossos projetos para sua empresa
+            Números reais de projetos que transformaram empresas
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {projects.map((project, index) => (
             <Card 
               key={project.title} 
@@ -63,10 +69,10 @@ export default function ProjectsSection() {
                 <p className="text-lg text-primary font-semibold mb-6">{project.subtitle}</p>
                 
                 <Button
-                  onClick={() => handleProjectClick(project.title)}
+                  onClick={() => window.open("https://api.whatsapp.com/send?phone=5562996573471", "_blank")}
                   className="bg-primary hover:bg-primary/90 text-primary-foreground hover-lift"
                 >
-                  Ver Projeto
+                  Quero estes resultados
                 </Button>
               </CardContent>
             </Card>

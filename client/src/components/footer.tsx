@@ -18,8 +18,8 @@ export default function Footer() {
               <span className="ml-2 text-xl font-bold">CloudIaC</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
-              Especialistas em transformação digital, oferecendo soluções completas em DevOps, 
-              Cloud Security e consultoria AWS para empresas que buscam inovação e eficiência.
+              Transformamos empresas com tecnologia que gera resultados reais: reduzindo custos, 
+              aumentando segurança e acelerando entregas. Especialistas em automação e nuvem.
             </p>
           </div>
           
@@ -66,7 +66,7 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contato</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>contato@cloudiac.com.br</li>
+              <li>contato@cloudiac.dev</li>
               <li>(62) 99657-3471</li>
               <li>Goiânia - GO</li>
             </ul>

@@ -1,0 +1,118 @@
+HOME (nova versão – linguagem de negócios)
+Título Principal
+🚀 Tecnologia que gera resultados reais para o seu negócio
+
+Subtítulo
+Ajudamos empresas a crescer, reduzir custos e proteger seus dados com soluções inteligentes de automação, segurança e nuvem. Tudo de forma personalizada, ágil e segura.
+
+Bloco de Benefícios
+Aumente sua produtividade eliminando processos manuais.
+
+Reduza custos de infraestrutura com otimização e automação.
+
+Proteja seu negócio contra ataques cibernéticos e vazamentos de dados.
+
+Ganhe escalabilidade para crescer sem limites.
+
+Nossos Serviços
+(novos nomes sugeridos – linguagem de negócio)
+
+Automação Inteligente e Entregas Ágeis (antes: DevOps)
+Coloque seus produtos no mercado até 3x mais rápido, com processos automatizados e sem erros.
+
+Segurança Digital Avançada (antes: Cloud Security)
+Proteção completa contra ameaças e conformidade com padrões globais como LGPD e ISO 27001.
+
+Escalabilidade Sob Demanda (antes: Kubernetes)
+Tenha aplicações sempre disponíveis e prontas para crescer junto com sua demanda.
+
+Consultoria Estratégica em Nuvem (antes: Consultoria AWS)
+Reduza custos, aumente a performance e tenha mais segurança na sua infraestrutura AWS.
+
+Resultados que já entregamos
+Redução de até 40% nos custos em nuvem
+
+Deploys realizados em horas, não em semanas
+
+Ambientes 100% conformes com LGPD e ISO 27001
+
+Escalabilidade automática para atender picos de demanda
+
+CTA:
+📅 Agende agora uma reunião gratuita e descubra como gerar resultados reais para sua empresa.
+
+SERVIÇOS (nova abordagem)
+1. Automação Inteligente e Entregas Ágeis
+Problema que resolvemos:
+Sua equipe perde tempo com tarefas manuais e enfrenta atrasos nos lançamentos?
+
+Nossa solução:
+Criamos pipelines de automação e integração contínua que eliminam erros humanos, aceleram entregas e aumentam a eficiência da sua equipe.
+
+O que você ganha:
+
+Redução de falhas e retrabalho
+
+Lançamento de produtos até 70% mais rápido
+
+Equipes mais produtivas e integradas
+
+2. Segurança Digital Avançada
+Problema que resolvemos:
+Riscos de ataques, vazamentos de dados e multas por não conformidade.
+
+Nossa solução:
+Implementamos segurança robusta para proteger seu ambiente em nuvem, monitorando ameaças e garantindo conformidade com normas de segurança.
+
+O que você ganha:
+
+Proteção contra ataques e vazamentos
+
+Confiabilidade e disponibilidade do seu ambiente
+
+Conformidade com LGPD, ISO 27001 e outros padrões globais
+
+3. Escalabilidade Sob Demanda
+Problema que resolvemos:
+Dificuldade para crescer sem perder desempenho ou gastar demais.
+
+Nossa solução:
+Projetamos e gerenciamos ambientes escaláveis que aumentam recursos automaticamente quando necessário e reduzem custos quando não há demanda.
+
+O que você ganha:
+
+Escalabilidade automática
+
+Alta disponibilidade e resiliência
+
+Redução de custos com uso inteligente de recursos
+
+4. Consultoria Estratégica em Nuvem
+Problema que resolvemos:
+Infraestrutura cara, pouco otimizada e com riscos de segurança.
+
+Nossa solução:
+Realizamos auditoria, treinamento e otimização da sua nuvem AWS para melhorar segurança, reduzir custos e aumentar performance.
+
+O que você ganha:
+
+Economia com Reserved e Spot Instances
+
+Infraestrutura mais segura e performática
+
+Equipe capacitada para manter e evoluir o ambiente
+
+SOBRE (nova abordagem)
+Na CloudIaC, acreditamos que tecnologia só faz sentido se gerar resultados reais para o negócio. Por isso, unimos automação, segurança e nuvem para criar soluções que reduzem custos, aumentam a eficiência e garantem proteção de ponta.
+
+Fundada por especialistas certificados AWS, nossa missão é transformar ambientes complexos em plataformas ágeis, seguras e escaláveis, prontas para o futuro.
+
+Por que escolher a CloudIaC:
+
+Certificações e expertise em AWS, DevOps e Segurança em Nuvem
+
+Projetos personalizados para cada necessidade
+
+Entregas rápidas, seguras e com impacto direto nos resultados do cliente
+
+📩 Entre em contato: contato@cloudiac.com.br | (62) 99657-3471

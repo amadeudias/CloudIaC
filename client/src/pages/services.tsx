@@ -29,7 +29,6 @@ export default function ServicesPage() {
         "Documentação e treinamento da equipe"
       ],
       results: "Clientes conseguem fazer deploys 3x mais rápidos e com 95% menos erros",
-      price: "A partir de R$ 8.000",
       timeline: "2-4 semanas"
     },
     {
@@ -51,7 +50,6 @@ export default function ServicesPage() {
         "Monitoramento 24/7 de ameaças"
       ],
       results: "100% dos clientes ficaram conformes com regulamentações",
-      price: "A partir de R$ 12.000",
       timeline: "3-6 semanas"
     },
     {
@@ -73,7 +71,6 @@ export default function ServicesPage() {
         "Otimização contínua de recursos"
       ],
       results: "Redução média de 45% nos custos de infraestrutura",
-      price: "A partir de R$ 15.000",
       timeline: "4-8 semanas"
     },
     {
@@ -95,7 +92,6 @@ export default function ServicesPage() {
         "Implementação e acompanhamento"
       ],
       results: "Economia média de R$ 50.000/mês para clientes enterprise",
-      price: "A partir de R$ 20.000",
       timeline: "6-12 semanas"
     }
   ];
@@ -201,7 +197,6 @@ export default function ServicesPage() {
 
                       <div className="flex flex-col sm:flex-row gap-4 items-center justify-between">
                         <div className="text-center sm:text-left">
-                          <div className="text-2xl font-bold text-primary">{service.price}</div>
                           <div className="text-sm text-gray-500 flex items-center">
                             <Clock className="mr-1 h-4 w-4" />
                             Prazo: {service.timeline}
@@ -209,10 +204,10 @@ export default function ServicesPage() {
                         </div>
                         
                         <Button
-                          onClick={() => window.open(`https://api.whatsapp.com/send?phone=5562996573471&text=Olá! Tenho interesse no serviço: ${service.title}. Gostaria de saber mais detalhes.`, "_blank")}
+                          onClick={() => window.open(`https://api.whatsapp.com/send?phone=5562996573471&text=Olá! Tenho interesse no serviço: ${service.title}. Gostaria de saber mais detalhes e valores.`, "_blank")}
                           className="bg-primary hover:bg-primary/90 text-white px-8 py-3"
                         >
-                          Quero este resultado
+                          Solicitar Orçamento
                         </Button>
                       </div>
                     </CardContent>

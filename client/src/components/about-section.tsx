@@ -42,8 +42,8 @@ export default function AboutSection() {
           
           <div className="relative animate-scale-in">
             <img 
-              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
-              alt="Professional team discussing cloud strategy in modern office" 
+              src="https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+              alt="Equipe profissional discutindo estratégia de cloud em escritório moderno" 
               className="rounded-2xl shadow-xl w-full h-auto"
             />
             

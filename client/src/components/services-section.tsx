@@ -8,29 +8,29 @@ export default function ServicesSection() {
       id: "01",
       title: "DevOps",
       description: "Automação de Infraestrutura e Integração Contínua",
-      image: "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
-      alt: "DevOps automation and CI/CD pipeline"
+      image: "https://images.unsplash.com/photo-1667372393086-9d4001d51cf1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      alt: "Automação DevOps com pipelines CI/CD"
     },
     {
       id: "02", 
       title: "Cloud Security",
       description: "Segurança Avançada para Ambientes em Nuvem",
-      image: "https://images.unsplash.com/photo-1563206767-5b18f218e8de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
-      alt: "Cloud security infrastructure with digital protection"
+      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      alt: "Segurança em nuvem com proteção digital avançada"
     },
     {
       id: "03",
       title: "Kubernetes", 
       description: "Gerenciamento de Containers em Escala",
-      image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
-      alt: "Kubernetes container orchestration and microservices architecture"
+      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      alt: "Orquestração de containers com Kubernetes"
     },
     {
       id: "04",
       title: "Consultoria AWS",
       description: "Focamos em segurança, otimização de custos e escalabilidade.",
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
-      alt: "AWS cloud consulting and infrastructure planning"
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      alt: "Consultoria AWS e planejamento de infraestrutura"
     }
   ];
 

@@ -1,6 +1,13 @@
 # Overview
 
-CloudIaC is a Brazilian DevOps consulting company website built as a full-stack application using React and Express. The site showcases their services in cloud infrastructure, security, and DevOps consulting, with a focus on AWS solutions. The application features a modern design system using Tailwind CSS and shadcn/ui components, with Portuguese language content targeting the Brazilian market.
+CloudIaC is a Brazilian DevOps consulting company website built as a full-stack application using React and Express. The site showcases their services in cloud infrastructure, security, and DevOps consulting, with a focus on AWS solutions. The application features a modern blue gradient design system using Tailwind CSS and shadcn/ui components, with Portuguese language content targeting the Brazilian market.
+
+## Recent Changes (January 2025)
+- Replaced contact form with WhatsApp button integration for direct customer communication
+- Removed yellow/amber accent color from hero section to match brand identity better  
+- Updated hero section with animated CloudIaC logo falling from top to bottom
+- Replaced all stock images with professional technology-focused photos from Unsplash
+- Enhanced user experience with direct WhatsApp contact instead of form submissions
 
 # User Preferences
 

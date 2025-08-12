@@ -9,20 +9,20 @@ export default function ProjectsSection() {
     {
       title: "Zero-Downtime",
       subtitle: "Deployment",
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
-      alt: "Diverse professional team collaborating in modern office"
+      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+      alt: "Equipe de DevOps trabalhando em deployment sem downtime"
     },
     {
       title: "FinOps",
       subtitle: "Consulting Project",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
-      alt: "Business professionals reviewing financial data and analytics"
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+      alt: "Análise financeira e otimização de custos em cloud"
     },
     {
       title: "Development / IaC",
       subtitle: "Infrastructure Architecture",
-      image: "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
-      alt: "Professional woman working on infrastructure architecture"
+      image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+      alt: "Desenvolvimento de infraestrutura como código"
     }
   ];
 

@@ -59,22 +59,24 @@ export default function HeroSection() {
             </div>
           </div>
           
-          <div className="relative flex justify-center items-center h-96">
+          <div className="relative flex justify-center items-center h-[500px]">
             <div className="animate-bounce-down">
-              <img 
-                src="https://cloudiac.dev/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-08-at-15.35.21-1-e1737997306774.jpeg" 
-                alt="CloudIaC Logo" 
-                className="w-64 h-64 object-contain rounded-2xl shadow-2xl"
-              />
+              <div className="bg-white bg-opacity-95 backdrop-blur-sm p-6 rounded-3xl shadow-2xl">
+                <img 
+                  src="https://cloudiac.dev/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-08-at-15.35.21-1-e1737997306774.jpeg" 
+                  alt="CloudIaC Logo" 
+                  className="w-80 h-80 object-contain rounded-2xl"
+                />
+              </div>
             </div>
             
             {/* Floating stats cards */}
-            <div className="absolute -bottom-6 -left-6 glass-morphism rounded-xl p-4 shadow-xl animate-fade-in">
+            <div className="absolute -bottom-8 -left-8 glass-morphism rounded-xl p-4 shadow-xl animate-fade-in">
               <div className="text-white text-2xl font-bold">99.9%</div>
               <div className="text-white text-sm font-medium">Uptime</div>
             </div>
             
-            <div className="absolute -top-6 -right-6 glass-morphism rounded-xl p-4 shadow-xl text-white animate-fade-in">
+            <div className="absolute -top-8 -right-8 glass-morphism rounded-xl p-4 shadow-xl text-white animate-fade-in">
               <div className="text-2xl font-bold">24/7</div>
               <div className="text-sm font-medium">Suporte</div>
             </div>

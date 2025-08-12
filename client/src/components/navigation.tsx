@@ -9,8 +9,8 @@ export default function Navigation() {
 
   const navigationItems = [
     { name: "Home", href: "/", id: "home" },
-    { name: "Serviços", href: "/#servicos", id: "servicos" },
-    { name: "Projetos", href: "/#projetos", id: "projetos" },
+    { name: "Serviços", href: "/servicos", id: "servicos" },
+    { name: "Projetos", href: "/projetos", id: "projetos" },
     { name: "Sobre", href: "/sobre", id: "sobre" },
   ];
 
@@ -26,6 +26,8 @@ export default function Navigation() {
   const handleNavClick = (href: string, id: string) => {
     if (href.startsWith("/#")) {
       scrollToSection(id);
+    } else {
+      window.location.href = href;
     }
     setMobileMenuOpen(false);
   };

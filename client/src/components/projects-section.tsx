@@ -1,8 +1,10 @@
+import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 
 export default function ProjectsSection() {
+  const [, setLocation] = useLocation();
   const { toast } = useToast();
 
   const projects = [
@@ -68,12 +70,21 @@ export default function ProjectsSection() {
                 <h3 className="text-2xl font-bold text-dark mb-2">{project.title}</h3>
                 <p className="text-lg text-primary font-semibold mb-6">{project.subtitle}</p>
                 
-                <Button
-                  onClick={() => window.open("https://api.whatsapp.com/send?phone=5562996573471", "_blank")}
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground hover-lift"
-                >
-                  Quero estes resultados
-                </Button>
+                <div className="flex gap-3">
+                  <Button
+                    onClick={() => setLocation("/projetos")}
+                    variant="outline"
+                    className="border-primary text-primary hover:bg-primary hover:text-white hover-lift"
+                  >
+                    Ver Detalhes
+                  </Button>
+                  <Button
+                    onClick={() => window.open("https://api.whatsapp.com/send?phone=5562996573471", "_blank")}
+                    className="bg-primary hover:bg-primary/90 text-primary-foreground hover-lift"
+                  >
+                    Quero estes resultados
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           ))}

@@ -1,8 +1,10 @@
+import { useLocation } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function ServicesSection() {
+  const [, setLocation] = useLocation();
   const services = [
     {
       id: "01",
@@ -69,10 +71,10 @@ export default function ServicesSection() {
                 
                 <Button
                   variant="ghost"
-                  onClick={handleContactClick}
+                  onClick={() => setLocation("/servicos")}
                   className="text-primary hover:text-secondary p-0 h-auto font-semibold group-hover:translate-x-1 transform duration-200"
                 >
-                  Learn More 
+                  Saber Mais 
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
               </CardContent>

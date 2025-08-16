@@ -29,9 +29,8 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left animate-fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Tecnologia que gera 
-              <span className="text-secondary block mt-2">resultados reais</span>
-              <span className="text-primary block mt-2">para o seu negócio</span>
+              A melhor <span className="text-blue-800">Solução</span>
+              <span className="text-secondary block mt-2">pra sua empresa</span>
             </h1>
             
             <p className="text-base md:text-lg text-gray-600 mb-8 max-w-2xl">

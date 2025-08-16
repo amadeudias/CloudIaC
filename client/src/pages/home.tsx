@@ -3,7 +3,6 @@ import HeroSection from "@/components/hero-section";
 import ServicesSection from "@/components/services-section";
 import ProjectsSection from "@/components/projects-section";
 import AboutSection from "@/components/about-section";
-import WhatsAppButton from "@/components/whatsapp-button";
 import Footer from "@/components/footer";
 
 export default function Home() {
@@ -14,7 +13,6 @@ export default function Home() {
       <ServicesSection />
       <ProjectsSection />
       <AboutSection />
-      <WhatsAppButton />
       <Footer />
     </div>
   );

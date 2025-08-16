@@ -10,6 +10,9 @@ CloudIaC is a Brazilian DevOps consulting company website built as a full-stack 
 - **Success Metrics Display**: Added real performance indicators throughout the site (-40% costs, 3x speed improvements)
 - **Professional Imagery**: Used Unsplash technology-focused photos to support business messaging
 - **Call-to-Action Optimization**: Enhanced CTAs to emphasize free consultation and guaranteed results
+- **Fixed WhatsApp Button**: Implemented sticky floating WhatsApp button visible across all pages during scroll
+- **Pricing Removal**: Removed all pricing from services page for commercial safety and flexibility
+- **Netlify Deploy Configuration**: Added netlify.toml and _redirects files for proper SPA deployment
 
 # User Preferences
 

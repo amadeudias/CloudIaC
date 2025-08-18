@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoImage from "@assets/WhatsApp-Image-2025-01-08-at-15.35.21_1754994716487.jpeg";
 
 export default function Navigation() {
   const [location] = useLocation();
@@ -40,7 +41,7 @@ export default function Navigation() {
           <Link href="/" className="flex items-center">
             <img 
               className="h-8 w-auto" 
-              src="https://cloudiac.dev/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-08-at-15.35.21-1-e1737997306774.jpeg" 
+              src={logoImage} 
               alt="CloudIaC Logo" 
             />
             <span className="ml-2 text-xl font-bold text-primary">CloudIaC</span>

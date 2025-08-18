@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoImage from "@assets/WhatsApp-Image-2025-01-08-at-15.35.21_1754994716487.jpeg";
 
 export default function HeroSection() {
   const scrollToServices = () => {
@@ -78,7 +79,7 @@ export default function HeroSection() {
             <div className="animate-bounce-down">
               <div className="bg-white bg-opacity-95 backdrop-blur-sm p-6 rounded-3xl shadow-2xl">
                 <img 
-                  src="https://cloudiac.dev/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-08-at-15.35.21-1-e1737997306774.jpeg" 
+                  src={logoImage} 
                   alt="CloudIaC Logo" 
                   className="w-80 h-80 object-contain rounded-2xl"
                 />

@@ -40,7 +40,7 @@ export default function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <img 
-              className="h-8 w-auto" 
+              className="h-12 w-auto" 
               src={logoImage} 
               alt="CloudIaC Logo" 
             />

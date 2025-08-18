@@ -81,7 +81,7 @@ export default function HeroSection() {
                 <img 
                   src={logoImage} 
                   alt="CloudIaC Logo" 
-                  className="w-80 h-80 object-contain rounded-2xl"
+                  className="w-96 h-96 object-contain rounded-2xl"
                 />
               </div>
             </div>

@@ -1,7 +1,7 @@
 import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
+import { ArrowUpRight, Gauge, LockKeyhole, Rocket, TrendingDown } from "lucide-react";
 
 export default function ProjectsSection() {
   const [, setLocation] = useLocation();
@@ -11,26 +11,26 @@ export default function ProjectsSection() {
     {
       title: "Redução de até 40%",
       subtitle: "nos custos em nuvem",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      alt: "Redução significativa de custos em infraestrutura de nuvem"
+      icon: TrendingDown,
+      accent: "bg-blue-50 text-primary"
     },
     {
       title: "Deploys realizados",
       subtitle: "em horas, não em semanas",
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      alt: "Automação de deploys para entregas ultra-rápidas"
+      icon: Rocket,
+      accent: "bg-amber-50 text-amber-600"
     },
     {
       title: "Ambientes 100% conformes",
       subtitle: "com LGPD e ISO 27001",
-      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      alt: "Conformidade total com padrões de segurança"
+      icon: LockKeyhole,
+      accent: "bg-emerald-50 text-emerald-600"
     },
     {
       title: "Escalabilidade automática",
       subtitle: "para atender picos de demanda",
-      image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      alt: "Escalabilidade automática e inteligente"
+      icon: Gauge,
+      accent: "bg-violet-50 text-violet-600"
     }
   ];
 
@@ -42,42 +42,39 @@ export default function ProjectsSection() {
   };
 
   return (
-    <section id="projetos" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">RESULTADOS QUE JÁ ENTREGAMOS</h2>
-          <p className="text-xl text-medium">
-            Números reais de projetos que transformaram empresas
+    <section id="projetos" className="py-24 bg-slate-50">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14 animate-fade-in">
+          <div>
+            <p className="text-sm font-bold uppercase tracking-[0.18em] text-primary mb-4">Impacto mensurável</p>
+            <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-dark">Resultados que<br className="hidden md:block" /> aparecem no negócio.</h2>
+          </div>
+          <p className="text-lg text-medium max-w-md md:text-right">
+            Menos complexidade para a operação. Mais clareza para tomar decisões e crescer.
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
           {projects.map((project, index) => (
-            <Card 
+            <article 
               key={project.title} 
-              className="group hover-lift overflow-hidden animate-fade-in"
+              className="group relative rounded-3xl border border-slate-200 bg-white p-7 hover-lift animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="overflow-hidden">
-                <img 
-                  src={project.image} 
-                  alt={project.alt}
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                />
+              <div className={`flex h-14 w-14 items-center justify-center rounded-2xl ${project.accent} mb-10`}>
+                <project.icon className="h-7 w-7" />
               </div>
-              
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-dark mb-2">{project.title}</h3>
-                <p className="text-lg text-primary font-semibold mb-6">{project.subtitle}</p>
+              <h3 className="text-3xl font-extrabold tracking-tight text-dark mb-2">{project.title}</h3>
+              <p className="text-base text-primary font-semibold mb-8">{project.subtitle}</p>
                 
-                <Button
-                  onClick={() => setLocation("/projetos")}
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground hover-lift w-full"
-                >
-                  Ver Detalhes
-                </Button>
-              </CardContent>
-            </Card>
+              <Button
+                variant="ghost"
+                onClick={() => setLocation("/projetos")}
+                className="p-0 h-auto text-sm font-bold text-dark hover:text-primary"
+              >
+                Ver detalhes <ArrowUpRight className="ml-1 h-4 w-4" />
+              </Button>
+            </article>
           ))}
         </div>
       </div>

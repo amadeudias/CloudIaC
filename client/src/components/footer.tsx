@@ -1,23 +1,25 @@
 import { Link } from "wouter";
+import { MapPin, Phone, Mail } from "lucide-react";
+import logoImage from "@assets/WhatsApp-Image-2025-01-08-at-15.35.21_1754994716487.jpeg";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-dark text-white py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="bg-dark text-white py-16">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
               <img 
-                className="h-8 w-auto" 
-                src="https://cloudiac.dev/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-08-at-15.35.21-1-e1737997306774.jpeg" 
+                className="h-12 w-12 object-contain rounded-lg bg-white" 
+                src={logoImage}
                 alt="CloudIaC Logo" 
               />
               <span className="ml-2 text-xl font-bold">CloudIaC</span>
             </div>
-            <p className="text-gray-400 mb-6 max-w-md">
+            <p className="text-slate-400 mb-6 max-w-md leading-relaxed">
               Transformamos empresas com tecnologia que gera resultados reais: reduzindo custos, 
               aumentando segurança e acelerando entregas. Especialistas em automação e nuvem.
             </p>
@@ -64,11 +66,11 @@ export default function Footer() {
           
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Contato</h4>
-            <ul className="space-y-2 text-gray-400">
-              <li>contato@cloudiac.dev</li>
-              <li>(62) 99657-3471</li>
-              <li>Goiânia - GO</li>
+            <h4 className="text-lg font-semibold mb-5">Contato</h4>
+            <ul className="space-y-4 text-slate-400 text-sm">
+              <li className="flex items-start gap-3"><Mail className="h-4 w-4 text-accent mt-0.5" /><span>contato@cloudiac.dev</span></li>
+              <li className="flex items-start gap-3"><Phone className="h-4 w-4 text-accent mt-0.5" /><span>(62) 99657-3471</span></li>
+              <li className="flex items-start gap-3"><MapPin className="h-4 w-4 text-accent mt-0.5" /><span>Av. Portugal, 1148<br />Setor Marista<br />Goiânia/GO · 74.150-030</span></li>
             </ul>
           </div>
         </div>

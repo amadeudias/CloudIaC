@@ -2,7 +2,7 @@ import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowLeft, TrendingDown, Clock, Award, Users } from "lucide-react";
+import { ArrowLeft, Award, BarChart3, Clock, Lightbulb, Rocket, ShieldCheck, TrendingDown, Users, AlertTriangle } from "lucide-react";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 
@@ -23,7 +23,8 @@ export default function ProjectsPage() {
         "Visibilidade completa de custos por projeto",
         "Alertas automáticos de gastos excessivos"
       ],
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      icon: TrendingDown,
+      visual: "from-primary to-blue-400",
       timeline: "6 semanas",
       roi: "576% em 12 meses"
     },
@@ -40,7 +41,8 @@ export default function ProjectsPage() {
         "95% redução em bugs em produção",
         "Time de desenvolvimento 3x mais produtivo"
       ],
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      icon: Rocket,
+      visual: "from-accent to-amber-500",
       timeline: "4 semanas",
       roi: "300% em 6 meses"
     },
@@ -57,7 +59,8 @@ export default function ProjectsPage() {
         "Zero incidentes de segurança",
         "Auditoria aprovada sem ressalvas"
       ],
-      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      icon: ShieldCheck,
+      visual: "from-slate-800 to-primary",
       timeline: "8 semanas",
       roi: "Evitou multa de R$ 2M+"
     },
@@ -74,31 +77,34 @@ export default function ProjectsPage() {
         "50% melhoria na velocidade da aplicação",
         "Crescimento de 200% na base de usuários"
       ],
-      image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      icon: BarChart3,
+      visual: "from-secondary to-primary",
       timeline: "10 semanas",
       roi: "500% em 12 meses"
     }
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-slate-50">
       <Navigation />
       
-      <main className="pt-20">
+      <main>
         {/* Header */}
-        <section className="py-16 bg-gradient-to-br from-primary to-secondary text-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="relative overflow-hidden py-24 bg-gradient-to-br from-primary to-secondary text-white">
+          <div className="absolute -right-20 -top-28 h-96 w-96 rounded-full border-[42px] border-white/10" />
+          <div className="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
             <Button
               variant="ghost"
               onClick={() => setLocation("/")}
-              className="mb-8 text-white hover:bg-white/10"
+              className="mb-10 text-white hover:bg-white/10"
             >
               <ArrowLeft className="mr-2 h-4 w-4" />
               Voltar para Home
             </Button>
             
             <div className="text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              <p className="text-sm font-bold uppercase tracking-[0.18em] text-blue-100 mb-5">Impacto mensurável</p>
+              <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
                 Resultados Reais Que Já Entregamos
               </h1>
               <p className="text-xl opacity-90 max-w-3xl mx-auto">
@@ -111,20 +117,23 @@ export default function ProjectsPage() {
 
         {/* Projects Grid */}
         <section className="py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
             <div className="grid gap-16">
               {projects.map((project, index) => (
                 <Card key={project.id} className="overflow-hidden hover-lift">
                   <div className={`grid lg:grid-cols-2 gap-8 ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
-                    <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
-                      <img
-                        src={project.image}
-                        alt={project.title}
-                        className="w-full h-64 lg:h-full object-cover"
-                      />
+                    <div className={`relative min-h-[280px] bg-gradient-to-br ${project.visual} p-8 flex items-end ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
+                      <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_75%_20%,white,transparent_30%),linear-gradient(135deg,transparent_60%,rgba(255,255,255,0.3))]" />
+                      <div className="relative">
+                        <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/15 text-white backdrop-blur-sm border border-white/20 mb-8">
+                          <project.icon className="h-8 w-8" />
+                        </div>
+                        <p className="text-sm font-bold uppercase tracking-[0.16em] text-white/70">Case CloudIaC · {String(index + 1).padStart(2, "0")}</p>
+                        <p className="mt-2 text-2xl font-extrabold text-white max-w-xs">{project.sector}</p>
+                      </div>
                     </div>
                     
-                    <CardContent className="p-8 lg:p-12">
+                      <CardContent className="p-7 lg:p-10">
                       <div className="flex items-center gap-3 mb-4">
                         <Badge variant="secondary" className="text-sm">
                           {project.sector}
@@ -145,21 +154,21 @@ export default function ProjectsPage() {
                       <div className="space-y-6">
                         <div>
                           <h3 className="text-lg font-semibold mb-2 text-red-600">
-                            🚨 Desafio
+                            <AlertTriangle className="inline-block mr-2 h-5 w-5 align-text-bottom" />Desafio
                           </h3>
                           <p className="text-gray-600">{project.challenge}</p>
                         </div>
 
                         <div>
                           <h3 className="text-lg font-semibold mb-2 text-blue-600">
-                            💡 Nossa Solução
+                            <Lightbulb className="inline-block mr-2 h-5 w-5 align-text-bottom" />Nossa Solução
                           </h3>
                           <p className="text-gray-600">{project.solution}</p>
                         </div>
 
                         <div>
                           <h3 className="text-lg font-semibold mb-3 text-green-600">
-                            📈 Resultados Alcançados
+                            <BarChart3 className="inline-block mr-2 h-5 w-5 align-text-bottom" />Resultados Alcançados
                           </h3>
                           <div className="grid sm:grid-cols-2 gap-3">
                             {project.results.map((result, idx) => (

@@ -2,7 +2,7 @@ import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowLeft, CheckCircle, Clock, Users, TrendingUp } from "lucide-react";
+import { ArrowLeft, BellRing, CheckCircle, Clock, CloudCog, Container, GitBranch, ShieldCheck, Users, TrendingUp } from "lucide-react";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 
@@ -15,7 +15,8 @@ export default function ServicesPage() {
       title: "Automação Inteligente e Entregas Ágeis",
       subtitle: "DevOps e CI/CD",
       description: "Transforme sua forma de entregar software com automação completa dos processos de desenvolvimento e deployment.",
-      image: "https://images.unsplash.com/photo-1667372393086-9d4001d51cf1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      icon: GitBranch,
+      visual: "from-primary to-blue-400",
       benefits: [
         "Redução de 70% no tempo de deployment",
         "Eliminação de erros manuais em produção",
@@ -34,9 +35,10 @@ export default function ServicesPage() {
     {
       id: "seguranca-digital",
       title: "Segurança Digital Avançada",
-      subtitle: "Cloud Security",
-      description: "Proteja completamente seus dados e sistemas com as melhores práticas de segurança em nuvem.",
-      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      subtitle: "Proteção e conformidade",
+      description: "Proteja dados, acessos e aplicações com uma arquitetura segura, preparada para auditorias e para o crescimento do negócio.",
+      icon: ShieldCheck,
+      visual: "from-primary via-secondary to-blue-300",
       benefits: [
         "Conformidade total com LGPD e ISO 27001",
         "Proteção contra ataques e invasões",
@@ -57,7 +59,8 @@ export default function ServicesPage() {
       title: "Escalabilidade Sob Demanda",
       subtitle: "Kubernetes e Containers",
       description: "Tenha aplicações que crescem automaticamente conforme a demanda, sem desperdício de recursos.",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      icon: Container,
+      visual: "from-secondary to-primary",
       benefits: [
         "Escala automática baseada na demanda",
         "Alta disponibilidade garantida",
@@ -78,7 +81,8 @@ export default function ServicesPage() {
       title: "Consultoria Estratégica em Nuvem",
       subtitle: "AWS Solutions Architecture",
       description: "Estratégia completa para migração e otimização da sua infraestrutura na AWS.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      icon: CloudCog,
+      visual: "from-blue-500 to-indigo-500",
       benefits: [
         "Redução de até 50% nos custos de nuvem",
         "Arquitetura otimizada para performance",
@@ -93,28 +97,52 @@ export default function ServicesPage() {
       ],
       results: "Economia média de R$ 50.000/mês para clientes enterprise",
       timeline: "6-12 semanas"
+    },
+    {
+      id: "monitoramento-aplicacoes",
+      title: "Monitoramento de Aplicações",
+      subtitle: "Observabilidade e APM",
+      description: "Tenha visibilidade completa da experiência dos usuários e da saúde das suas aplicações antes que um problema vire impacto no negócio.",
+      icon: BellRing,
+      visual: "from-primary to-secondary",
+      benefits: [
+        "Identificação rápida de gargalos e erros",
+        "Alertas inteligentes baseados em contexto",
+        "Visibilidade de métricas, logs e traces",
+        "Redução do tempo de resposta a incidentes"
+      ],
+      whatWeDeliver: [
+        "Instrumentação das aplicações e serviços",
+        "Painéis executivos e técnicos",
+        "Alertas por prioridade e canal",
+        "Rotina de análise e melhoria contínua"
+      ],
+      results: "Mais previsibilidade para a operação e uma experiência melhor para seus usuários",
+      timeline: "2-5 semanas"
     }
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-slate-50">
       <Navigation />
       
-      <main className="pt-20">
+      <main>
         {/* Header */}
-        <section className="py-16 bg-gradient-to-br from-primary to-secondary text-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="relative overflow-hidden py-24 bg-gradient-to-br from-primary to-secondary text-white">
+          <div className="absolute -right-20 -top-28 h-96 w-96 rounded-full border-[42px] border-white/10" />
+          <div className="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
             <Button
               variant="ghost"
               onClick={() => setLocation("/")}
-              className="mb-8 text-white hover:bg-white/10"
+              className="mb-10 text-white hover:bg-white/10"
             >
               <ArrowLeft className="mr-2 h-4 w-4" />
               Voltar para Home
             </Button>
             
             <div className="text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              <p className="text-sm font-bold uppercase tracking-[0.18em] text-blue-100 mb-5">Especialistas em operação</p>
+              <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
                 Nossos Serviços
               </h1>
               <p className="text-xl opacity-90 max-w-3xl mx-auto">
@@ -127,30 +155,33 @@ export default function ServicesPage() {
 
         {/* Services Grid */}
         <section className="py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid gap-16">
+          <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+            <div className="grid gap-8">
               {services.map((service, index) => (
-                <Card key={service.id} className="overflow-hidden hover-lift">
-                  <div className={`grid lg:grid-cols-2 gap-8 ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
-                    <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
-                      <img
-                        src={service.image}
-                        alt={service.title}
-                        className="w-full h-64 lg:h-full object-cover"
-                      />
+                <Card key={service.id} className="overflow-hidden rounded-3xl border-slate-200 hover-lift">
+                  <div className="grid lg:grid-cols-[0.42fr_1.58fr] items-start">
+                    <div className={`relative min-h-[220px] lg:h-[260px] bg-gradient-to-br ${service.visual} p-7 flex items-end self-start`}>
+                      <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_75%_20%,white,transparent_30%),linear-gradient(135deg,transparent_60%,rgba(255,255,255,0.3))]" />
+                      <div className="relative">
+                        <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white/15 text-white backdrop-blur-sm border border-white/20 mb-6">
+                          <service.icon className="h-7 w-7" />
+                        </div>
+                        <p className="text-sm font-bold uppercase tracking-[0.16em] text-white/70">CloudIaC · {String(index + 1).padStart(2, "0")}</p>
+                        <h3 className="mt-2 text-2xl font-extrabold text-white max-w-xs">{service.subtitle}</h3>
+                      </div>
                     </div>
                     
-                    <CardContent className="p-8 lg:p-12">
+                    <CardContent className="p-7 lg:p-10">
                       <div className="flex items-center gap-3 mb-4">
-                        <Badge variant="secondary" className="text-sm">
+                            <Badge variant="secondary" className="text-sm rounded-full">
                           {service.subtitle}
                         </Badge>
-                        <Badge variant="outline" className="text-sm">
+                            <Badge variant="outline" className="text-sm rounded-full">
                           {service.timeline}
                         </Badge>
                       </div>
                       
-                      <h2 className="text-3xl font-bold text-dark mb-4">
+                        <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-dark mb-4">
                         {service.title}
                       </h2>
                       
@@ -190,8 +221,8 @@ export default function ServicesPage() {
                         </div>
                       </div>
 
-                      <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-6 mb-6">
-                        <h4 className="font-semibold text-dark mb-2">✨ Resultado Garantido</h4>
+                       <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-6 mb-6">
+                         <h4 className="font-semibold text-dark mb-2">Resultado esperado</h4>
                         <p className="text-gray-700">{service.results}</p>
                       </div>
 
